@@ -1,0 +1,161 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+.html {
+    scroll-behavior: smooth;
+    display: block;
+}
+.body {
+    margin: 0px;
+    padding: 0px;
+}
+
+.parallax {
+    /* The image used */
+    background-image: url("../asset/parallax.jpg");
+    box-shadow: inset 0 0 0 1000px rgba(0,0,0,.2), inset 0 0 0 1000px rgba(0,0,0,.2);
+    /* Set a specific height */
+    height: 100vh;
+  
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+.menu {
+    font-size: 25px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    padding: 60px;
+    align-self: stretch;
+}
+  .fa-instagram {  
+    color: white; 
+    transition: all .2s ease-in-out; 
+  }  
+
+#links, #banner p, #hed {
+    color: white;
+    font-size: 20px;
+    font-family: 'Nunito Sans', sans-serif;
+    transition: all .3s ease-in-out;
+}
+#submenu {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+#submenu a {
+    padding-right: 75px;
+}
+#banner {
+    min-height: 70%;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-left: 150px;
+}
+#banner img {
+    width: 40vw;
+    transition: all .4s ease-in-out;
+    
+}
+#banner p {
+    padding: 30px;
+}
+#logo {
+    width: 40vw;
+    text-align: center;
+}
+:root {
+  --mainColor: #f4dbdb;
+}
+
+#links::after {
+    display: flex;
+    content: '';
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 0.1em;
+    background-color:#f4dbdb;
+    opacity: 0;
+    transition: opacity 300ms, transform 300ms;
+  }
+  
+  #links:hover::after,
+  #links:focus::after {
+    opacity: 1;
+    transform: translate3d(0, 0.2em, 0);
+  }
+  #links:hover {
+    color:	#f4dbdb;
+  }
+  .fa:hover {
+      color: 	#f4dbdb;
+      transform: scale(1.10);
+  }
+
+ #learn {
+    width: 250px;
+    padding: 10px;
+    margin-top: 100px;
+    color: white;
+    border-color: white;
+    border-style: solid;
+    border-width: 2px;
+    font-size: 20px;
+    font-family: 'Nunito Sans', sans-serif;
+    text-align: center;
+    background:
+    linear-gradient(
+      to bottom, var(--mainColor) 0%,
+      var(--mainColor) 100%
+    );
+    background-position: 0 100%;
+    background-repeat: repeat-x;
+    background-size: 0px 0px;
+    text-decoration: none;
+    transition: all .4s;
+
+}
+
+ #learn:hover {
+     color: black;
+     border-color: #f4dbdb;
+     background-size: 4px 50px;
+} 
+#banner img:hover {
+    transform: scale(1.02);
+}
+
+
+@media screen and (min-width: 0px) and (max-width: 950px) {
+    .menu { display: none; }  
+    #banner {
+        padding-left: 0px;
+        min-height: 100%;
+    }
+    .parallax {
+        align-items: stretch;
+    }
+    #banner img {
+        width: 70vw;
+    }
+    #logo {
+        width: 70vw;
+    }
+  }
