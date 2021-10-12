@@ -9,6 +9,9 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Nunito&family=Nunito+Sans&family=Playfair+Display&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">   
 </head>
 
@@ -25,15 +28,113 @@
         </div>
         <div id="banner">
             <a href="#" id="logo shine"><img src="asset/logo.png" alt="Logo of Magic Moments Latvia"></a>
-            <p>Lorem Ipsum has been the industry's</p>
-            <a href="#" id="learn">Узнать больше</a>
-            
+            <p>Свадьба — это день, когда вы должны
+                наслаждаться каждым волшебным моментом!
+                </p>
+            <a href="#" id="learn">Узнать больше</a> 
         </div>
+    </div>
+
+    <!--Что самое главное в свадебном дне? 
+Место? Еда? Ведущий? Может платье невесты? Нет! 
+Самое главное это воспоминания! Воспоминания об этом волшебном дне, которые останутся на всю жизнь!-->
+
+    <div class="hey">
+        <h1>Что самое главное в свадебном дне?</h1>
+        <div id="ques">
+            <h2 class="hidden animate-delay-1">Место?</h2>
+            <h2 class="hidden animate-delay-2">Еда?</h2>
+            <h2 class="hidden animate-delay-3">Ведущий?</h2>        
+        </div>
+        <p class="hidd animate-delay-4"><span id="memo">Самое главное это воспоминания!</span><br>
+            Воспоминания об этом волшебном дне, которые останутся на всю жизнь!</p>
+    </div>
+
+    <div class="benefits">
 
     </div>
 
+    <div class="about"> 
+        <div class="shape">
+            <img id="lera2" src="asset/lera2.png" alt="Фото Валерии Гридневой">
+            <img id="lera" src="asset/lera.png" alt="Фото Валерии Гридневой">
+        </div>
+        <div class="bio">
+            <h1>Валерия Гриднева</h1>
+            <h2>Ваш свадебный организатор</h2>
+            <p>Сертифицированна школой <span style="font-weight: 600;">New Skills Academy</span> и Терезой Бородиной, основательницей Московского свадебного агенства с проведёнными более чем 300 свадеб и победительницей премии Wedding Awards</p>
+            <a href="#" id="instabut"><span class="fa fa-instagram"></span>Подписаться</a>
+        </div>
+    </div>
+
+    <!--Если ты хочешь, чтобы твои воспоминания об этом дне были поистине волшебными, то свяжись со мной! Вместе мы продумаем все мелочи, а главное разберёмся, какая она - свадьба твоей мечты! И воплотим это в реальность -->
+
+    <div class="">
+
+    </div>
 
 </body>
+
+
+<script>
+ (function() {
+  var elements;
+  var windowHeight;
+
+  function init() {
+    elements = document.querySelectorAll('.hidden');
+    windowHeight = window.innerHeight;
+  }
+
+  function checkPosition() {
+    for (var i = 0; i < elements.length; i++) {
+      var element = elements[i];
+      var positionFromTop = elements[i].getBoundingClientRect().top;
+
+      if (positionFromTop - windowHeight <= 0) {
+        element.classList.remove('hidden');
+        element.classList.add('hidden2');
+
+      }
+    }
+  }
+
+  window.addEventListener('scroll', checkPosition);
+  window.addEventListener('resize', init);
+
+  init();
+  checkPosition();
+})();
+(function() {
+  var elements;
+  var windowHeight;
+
+  function init() {
+    elements = document.querySelectorAll('.hidd');
+    windowHeight = window.innerHeight;
+  }
+
+  function checkPosition() {
+    for (var i = 0; i < elements.length; i++) {
+      var element = elements[i];
+      var positionFromTop = elements[i].getBoundingClientRect().top;
+
+      if (positionFromTop - windowHeight <= 0) {
+        element.classList.remove('hidd');
+        element.classList.add('hidd2');
+
+      }
+    }
+  }
+
+  window.addEventListener('scroll', checkPosition);
+  window.addEventListener('resize', init);
+
+  init();
+  checkPosition();
+})();
+</script>
+
 
 </html>
 
