@@ -218,6 +218,7 @@
 .bio {
     padding: 50px;
     width: 650px;
+    padding-bottom: 70px;
 }
 
 .bio h1 {
@@ -229,7 +230,7 @@
 }
 .bio h2 {
     font-family: 'Nunito', sans-serif;
-    font-weight: 600;
+    font-weight: 800;
     font-size: 20px;
     color: black;
     opacity: 80%;
@@ -293,7 +294,7 @@
     text-align: center;
     padding: 20px;
     padding-top: 60px;
-    padding-bottom: 60px;
+    padding-bottom: 90px;
 }
 .hey h1 {
     font-family: 'Playfair Display', serif;
@@ -382,13 +383,93 @@
 .animate-delay-1 { animation-delay: 0.7s;}
 .animate-delay-2 { animation-delay: 1.4s;}
 .animate-delay-3 { animation-delay: 2.1s;}
-.animate-delay-4 { animation-delay: 2.8s;}
+.animate-delay-4 { animation-delay: 3s;}
  
 .benefits {
     width: 100%;
-    height: 500px;
-    background-color: #d9cbc0;
+    min-height: 500px;
+     background-image: url("../asset/photo1.jpg");
+    box-shadow: inset 0 0 0 1000px rgba(0,0,0,.3), inset 0 0 0 1000px rgba(0,0,0,.2);
+    /* Set a specific height */
+  
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: 10%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 80px;
 }
+
+.benefits h1 {
+    padding: 60px;
+    opacity: 95%;
+     font-family: 'Playfair Display', serif;
+    font-weight: 600;
+}
+
+.postben {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    
+}
+
+.benefits h2 {
+    font-family: 'Nunito', sans-serif;
+    font-weight: 800;
+    font-size: 20px;
+    padding: 40px;
+    opacity: 95%;
+}
+
+.daudz {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg id='squiggle-link' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:ev='http://www.w3.org/2001/xml-events' viewBox='0 0 20 4'%3E%3Cstyle type='text/css'%3E.squiggle{animation:shift .6s linear infinite;}@keyframes shift {from {transform:translateX(0);}to {transform:translateX(-20px);}}%3C/style%3E%3Cpath fill='none' stroke='white' opacity='0.9' stroke-width='1.2' class='squiggle' d='M0,3.5 c 5,0,5,-3,10,-3 s 5,3,10,3 c 5,0,5,-3,10,-3 s 5,3,10,3'/%3E%3C/svg%3E");
+  background-position: bottom;
+  background-repeat: repeat-x;
+  background-size: 6%;
+  border-bottom: 0;
+  padding-bottom: .3em;
+  text-decoration: none;
+}
+
+/* THIS IS REVIEW CONTAINER */
+
+.review {
+    width: 100%;
+    min-height: 500px;
+     background-image: url("../asset/photo2.jpg");
+    box-shadow: inset 0 0 0 1000px rgba(0,0,0,.4), inset 0 0 0 1000px rgba(0,0,0,.2);
+    /* Set a specific height */
+  
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: 10%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 80px;
+}
+
+/* THIS IS FOR MOBILE */
 
 @media screen and (min-width: 0px) and (max-width: 950px) {
     .menu { display: none; }  
@@ -398,7 +479,7 @@
     }
     .parallax {
         align-items: stretch;
-        background-position: right;
+        background-position: 80%;
     }
     #banner img {
         width: 70vw;
@@ -408,6 +489,10 @@
     }
     .bio {
         text-align: center;
+    }
+    .bio h1 {
+        font-size: 30px;
+        padding-bottom: 10px;
     }
     .about {
         padding-top: 80px;
