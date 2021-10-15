@@ -490,6 +490,7 @@ https://nicepage.com/ru/html-templates/preview/chto-govoryat-o-nas-polzovateli-3
     .parallax {
         align-items: stretch;
         background-position: 80%;
+        background-size: cover;
         
     }
     #banner img {
