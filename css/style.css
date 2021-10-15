@@ -29,6 +29,11 @@
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+    -webkit-background-size: cover;
+-moz-background-size: cover;
+-o-background-size: cover;
+background-size: cover;
+-ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/images/parallax.png',    sizingMethod='scale')";
   }
 
 .menu {
@@ -357,6 +362,7 @@
     opacity: 0;
     animation-fill-mode: forwards; 
     transition: all .4s; 
+    animation-play-state: paused;
 }
 .hidd2 {
     animation-duration: 3s;
@@ -383,8 +389,13 @@
 .animate-delay-1 { animation-delay: 0.7s;}
 .animate-delay-2 { animation-delay: 1.4s;}
 .animate-delay-3 { animation-delay: 2.1s;}
-.animate-delay-4 { animation-delay: 3s;}
+.animate-delay-4 { animation-delay: 2.7s;}
  
+
+/* https://nicepage.com/ru/c/otzyvy-html-shablony
+https://nicepage.com/ru/html-templates/preview/chto-govoryat-o-nas-polzovateli-372297?device=desktop */
+
+
 .benefits {
     width: 100%;
     min-height: 500px;
@@ -480,6 +491,7 @@
     .parallax {
         align-items: stretch;
         background-position: 80%;
+        
     }
     #banner img {
         width: 70vw;
@@ -498,7 +510,10 @@
         padding-top: 80px;
         padding-bottom: 25px;
     }
+    
+        
     #ques {
         flex-direction: column;
     }
+   
   }
