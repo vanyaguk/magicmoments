@@ -33,7 +33,6 @@
 -moz-background-size: cover;
 -o-background-size: cover;
 background-size: cover;
--ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/images/parallax.png',    sizingMethod='scale')";
   }
 
 .menu {
