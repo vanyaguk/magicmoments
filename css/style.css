@@ -332,7 +332,7 @@ background-size: cover;
     padding-top: 10px;
 }
 #memo {
-    font-weight: 700;
+    font-weight: 800;
     font-size: 25px;
     color: black;
 }
@@ -523,8 +523,7 @@ https://nicepage.com/ru/html-templates/preview/chto-govoryat-o-nas-polzovateli-3
  }
 
 .card  {  
-    background-color: white;
-  
+    
     height: 350px;
     width: 70%;
 
