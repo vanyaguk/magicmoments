@@ -556,6 +556,12 @@ https://nicepage.com/ru/html-templates/preview/chto-govoryat-o-nas-polzovateli-3
         background-size: cover;
         background-attachment: scroll;
     }
+.benefits {
+background-attachment: scroll;
+}
+.review {
+background-attachment: scroll;
+}
     #banner img {
         width: 70vw;
     }
