@@ -9,6 +9,10 @@
     scroll-behavior: smooth;
     display: block;
 }
+::selection {
+  background-color: #f4dbdbc2;
+}
+
 .body {
     margin: 0px;
     padding: 0px;
@@ -16,9 +20,8 @@
 
 .parallax {
     /* The image used */
-    background-image: url("../asset/parallax.jpg");
-    box-shadow: inset 0 0 0 1000px rgba(0,0,0,.2), inset 0 0 0 1000px rgba(0,0,0,.2);
-    /* Set a specific height */
+    background-image: linear-gradient(to bottom, rgb(0, 0, 0, 0.8), rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+    url('../asset/parallax.jpg');
     height: 100vh;
   
     /* Create the parallax scrolling effect */
@@ -53,15 +56,28 @@ background-size: cover;
     color: white;
     font-size: 20px;
     font-family: 'Nunito Sans', sans-serif;
-    transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out; 
 }
+#links, #banner {
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+}
+
 #submenu {
     display: flex;
+    align-items: center;
+    justify-content: center;
     flex-direction: row;
     flex-wrap: nowrap;
+    transition: 500ms;
 }
 #submenu a {
     padding-right: 75px;
+    color: white;
 }
 #banner {
     min-height: 70%;
@@ -71,8 +87,9 @@ background-size: cover;
     align-items: center;
     justify-content: center;
     padding-left: 150px;
+    transition: 500ms;
 }
-#banner img {
+.bannerimg {
     width: 40vw;
     transition: all .4s ease-in-out;
     
@@ -88,6 +105,7 @@ background-size: cover;
 :root {
   --mainColor: #f4dbdb;
   --mainColor2: white;
+  --mainColor3: #d9cbc0;
 }
 
 #links::after {
@@ -111,7 +129,7 @@ background-size: cover;
     color:	#f4dbdb;
     transform: scale(1.02);
   }
-  .fa:hover {
+  #submenu a:hover {
       color: 	#f4dbdb;
       transform: scale(1.10);
   }
@@ -419,6 +437,92 @@ https://nicepage.com/ru/html-templates/preview/chto-govoryat-o-nas-polzovateli-3
     padding-bottom: 80px;
 }
 
+.ben {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.ben:hover {
+    transform: scale(1.01);
+    transition: 500ms;
+}
+
+.shapethree {
+ animation: morph4 8s ease-in-out infinite;
+ border-radius: 40% 30% 60% 70%;
+ height: 200px;
+ transition: all 8s ease-in-out;
+ width: 200px;
+ overflow: hidden;
+ box-shadow: 2px 2px 109px 0px rgba(255,255,255,0.75);
+-webkit-box-shadow: 2px 2px 109px 0px rgba(255,255,255,0.75);
+-moz-box-shadow: 2px 2px 109px 0px rgba(255,255,255,0.75);
+}
+.shapefour {
+ animation: morph2 8s ease-in-out infinite;
+ border-radius:  40% 30% 60% 70%;
+ height: 200px;
+ transition: all 8s ease-in-out;
+ width: 200px;
+ overflow: hidden;
+ box-shadow: 2px 2px 109px 0px rgba(255,255,255,0.75);
+-webkit-box-shadow: 2px 2px 109px 0px rgba(255,255,255,0.75);
+-moz-box-shadow: 2px 2px 109px 0px rgba(255,255,255,0.75);
+}
+.shapefive {
+ animation: morph3 8s ease-in-out infinite;
+ border-radius: 40% 30% 60% 70%;
+ height: 200px;
+ transition: all 8s ease-in-out;
+ width: 200px;
+ overflow: hidden;
+ box-shadow: 2px 2px 109px 0px rgba(255,255,255,0.75);
+-webkit-box-shadow: 2px 2px 109px 0px rgba(255,255,255,0.75);
+-moz-box-shadow: 2px 2px 109px 0px rgba(255,255,255,0.75);
+}
+
+.firstph {
+      background-image: url("../asset/image1.jpg");
+      background-size: 200px;
+}
+.secondph {
+      background-image: url("../asset/image2.jpg");
+      background-size: 200px;
+}
+.thirdph {
+      background-image: url("../asset/image3.jpg");
+      background-size: 200px;
+}
+
+
+@keyframes morph3 {
+ 0% {
+           border-radius:   70% 70% 60% 70% / 50% 60% 40% 60%;
+   } 
+   
+   50% {
+           border-radius:  50% 60% 40% 60% / 70% 40% 70% 70%;
+   }
+ 
+   100% {
+    border-radius:   70% 70% 60% 70% / 50% 60% 40% 60%;
+   } 
+}
+@keyframes morph4 {
+ 0% {
+           border-radius:   60% 40% 60% 70% / 60% 40% 70% 40%; 
+   } 
+   
+   50% {
+           border-radius:   50% 60% 70% 60% / 40% 60% 70% 40% ;
+   }
+ 
+   100% {
+    border-radius:   60% 40% 60% 70% / 60% 40% 70% 40%; 
+   } 
+}
+
 .benefits h1 {
     padding: 60px;
     opacity: 95%;
@@ -460,7 +564,7 @@ https://nicepage.com/ru/html-templates/preview/chto-govoryat-o-nas-polzovateli-3
 .review {
     width: 100%;
     min-height: 500px;
-     background-image: url("../asset/photo2.jpg");
+     background-image: url("../asset/unsplash_stil.jpg");
     box-shadow: inset 0 0 0 1000px rgba(0,0,0,.4), inset 0 0 0 1000px rgba(0,0,0,.2);
     /* Set a specific height */
   
@@ -476,14 +580,22 @@ https://nicepage.com/ru/html-templates/preview/chto-govoryat-o-nas-polzovateli-3
     align-items: center;
     color: white;
     text-align: center;
-    padding-top: 90px;
-    padding-bottom: 50px;
+    padding-top: 60px;
+    padding-bottom: 60px;
     overflow: hidden;
+}
+
+.review h1 {
+    font-family: 'Playfair Display', serif;
+    color: rgba(255, 255, 255, 0.9);
+    text-align: center;
+    font-size: 4vh;
+    padding-bottom: 20px;
 }
 
 .slider {
   width: 100%;
-  
+  padding: 20px;
 }
 
 .swiper-container {
@@ -492,13 +604,12 @@ https://nicepage.com/ru/html-templates/preview/chto-govoryat-o-nas-polzovateli-3
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    
 }
 .swiper-wrapper {
     width: 90%  !important;
     display: flex;
     margin-left: -10%;
-    
+    cursor: default !important;
 }
 .swiper-pagination-bullet-active {
     color: white   !important;
@@ -523,15 +634,31 @@ https://nicepage.com/ru/html-templates/preview/chto-govoryat-o-nas-polzovateli-3
  }
 
 .card  {  
-    
-    height: 350px;
-    width: 70%;
-
+    display: flex;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
     text-align: left;
-    
-}
-.swiper-pagination {
+    justify-content: center;
+    align-items: center;
     padding-top: 25px;
+    transition: 600ms;
+}
+
+.cardinside {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    text-align: left;
+    justify-content: center;
+    padding: 30px;
+}
+.cardinside img {
+    vertical-align: middle;
+    margin-left: 5px;
+}
+
+.swiper-pagination {
+    padding-top: 0px;
 }
 
 
@@ -539,6 +666,321 @@ https://nicepage.com/ru/html-templates/preview/chto-govoryat-o-nas-polzovateli-3
     transition: opacity 2s !important;  
     opacity: 0 !important;
 }
+
+.revph {
+    width: 300px;
+    height: 300px;
+    border-radius: 49%;
+
+}
+.card p {
+    max-width: 600px;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    color: white;
+    opacity: 80%;   
+}
+
+.card h2 {
+    padding-top: 30px;
+    opacity: 95%;
+     font-family: 'Playfair Display', serif;
+    font-weight: 700;
+}
+
+.shapetwo {
+ animation: morph2 8s ease-in-out infinite;
+ border-radius: 40% 30% 60% 70%;
+ height: 300px;
+ transition: all 8s ease-in-out;
+ width: 300px;
+ display: flex;
+ overflow: hidden;
+ box-shadow: 2px 2px 75px 0px rgba(255,255,255,0.5);
+-webkit-box-shadow: 2px 2px 75px 0px rgba(255,255,255,0.5);
+-moz-box-shadow: 2px 2px 75px 0px rgba(255,255,255,0.5);
+}
+.revone {
+    background-image: url("../asset/image4.jpg");
+}
+.revtwo {
+    background-image: url("../asset/IMG_4821.JPG");
+    background-size: 300px;
+}
+.revthree {
+    background-image: url("../asset/IMG_1590.jpg");
+    background-size: 300px;
+}
+
+@keyframes morph2 {
+ 0% {
+           border-radius:   40% 60% 70% 40% / 50% 60% 40% 60%;
+   } 
+   
+   50% {
+           border-radius:  60% 40% 40% 70% / 60% 40% 70% 40%;  
+   }
+ 
+   100% {
+    border-radius:   40% 60% 70% 40% / 50% 60% 40% 60%;
+   } 
+}
+
+/* */
+
+.cityname {
+    font-family: 'Nunito', sans-serif;
+    font-size: 18px;
+    margin-right: 15px;
+    padding: 6px;
+    padding-left: 13px;
+    padding-right: 13px;
+    border-radius: 7px;
+    background-color: rgba(255, 255, 255, 0.400);
+    transition: 300ms;
+}
+
+
+/* */ 
+
+
+.fa-at {
+    padding-right: 3px;
+}
+.card h2 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    text-align: left;
+    justify-content: flex-start;
+    align-items: center;
+    
+}
+.fa-at:hover, .fa-map-marker:hover {
+    color: white;
+     transform: scale(1.0);
+}
+
+.fa:hover {
+     transform: scale(1.0);
+}
+
+/* SLIDER END*/
+
+.foorm {
+    width: 100%;
+    min-height: 100vh;
+    background-color: rgb(0, 0, 0, 0.9);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Nunito', sans-serif;
+    padding: 25px;
+}
+
+#ques h2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#ques img {
+    margin-left: 10px;
+}
+
+
+/* Form design */
+form span {
+font-size: 20px;
+}
+
+form {
+    padding-top: 25px;
+    width: 614px;
+    max-width: calc(100%-60px);
+}
+form img {
+    vertical-align: middle;
+    margin-left: 4px;
+}
+
+.form-element {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+
+}
+
+.form-element span {
+    margin-bottom: 10px;
+    color: #f4dbdb;
+}
+
+input {
+    height: 50px;
+}
+textarea {
+    height: 200px;
+}
+
+input, textarea {
+    border: none;
+    padding: 10px;
+    font-family: 'Nunito', sans-serif;
+    font-size: 20px;
+    background-color:  rgba(255, 255, 255, 0.95);;
+}
+
+form button {
+    width: 100%;
+    padding: 15px;
+    color: white;
+    border-color: white;
+    border-style: solid;
+    border-width: 1px;
+    font-size: 20px;
+    font-weight: 300;
+    font-family: 'Nunito Sans', sans-serif;
+    text-align: center;
+    background:
+    linear-gradient(
+      to bottom, var(--mainColor3) 0%,
+      var(--mainColor3) 100%
+    );
+    background-position: 0 5 100%;
+    background-repeat: repeat-x;
+    background-size: 0px 0px;
+    text-decoration: none;
+    transition: all .4s;
+    cursor: pointer;
+}
+
+form button:hover {
+     color: black;
+     border-color: #d9cbc0;
+     background-size: 4px 60px;
+     border-color: rgba(255, 255, 255, 0);
+     transform: scale(1.0);
+} 
+
+
+form h1 {
+    font-family: 'Playfair Display', serif;
+    color: rgba(255, 255, 255, 0.9);
+    text-align: center;
+    font-size: 4vh;
+}
+
+form ::placeholder {
+    opacity: 40%;
+}
+
+form p {
+    font-family: 'Nunito', sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+    color: rgba(255, 255, 255, 0.8);
+    padding-top: 20px;
+    padding-bottom: 30px;
+    text-align: center;
+}
+form b {
+    color: rgba(255, 255, 255, 0.9);
+}
+
+
+#formdone {
+    width: 100%;
+    padding: 15px;
+    color: #d9cbc0;
+    border-color: #d9cbc0;
+    border-style: solid;
+    border-width: 1px;
+    font-size: 20px;
+    font-weight: 300;
+    font-family: 'Nunito Sans', sans-serif;
+    text-align: center;
+    text-decoration: none;
+    transition: all .4s;
+    -webkit-user-select:none;
+    -moz-user-select:none;
+    user-select:none;
+    display: none;
+}
+
+/* Footer */
+
+.footer {
+    width: 100%;
+    color: white;
+    background-color: rgb(0, 0, 0, 0.9);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-family: 'Nunito', sans-serif;
+    padding-top: 35px;
+}
+.footerInside {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.footer h3 {
+    font-family: 'Playfair Display', serif;
+}
+.footer span {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 20px;
+}
+.footer p {
+    color: #f4dbdb;
+}
+.footer a {
+    width: 300px;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+
+    text-decoration: none;
+    color: white;
+    padding-bottom: 20px;
+}
+.footer a:hover {
+    color: #f4dbdb;
+}
+.footer i {
+    padding-right: 10px;
+}
+#copyright {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+    color: #f4dbdb91;
+}
+.footer small {
+    text-align: center;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.footer small a {
+    color: #f4dbdb91;
+    width: auto;
+}
+#creator:hover {
+    color: white;
+    transition: 500ms;
+    cursor: pointer;
+}
+#formdone img {
+    margin-left: 5px;
+}
+
 
 
 /* THIS IS FOR MOBILE */
@@ -561,7 +1003,7 @@ background-attachment: scroll;
 .review {
 background-attachment: scroll;
 }
-    #banner img {
+    .bannerimg {
         width: 70vw;
     }
     #logo {
@@ -579,6 +1021,14 @@ background-attachment: scroll;
         padding-bottom: 25px;
     }
     
+    .card h2 {
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+    .cityname {
+        margin: 5px;
+    }
         
     #ques {
         flex-direction: column;
@@ -586,5 +1036,17 @@ background-attachment: scroll;
      .swiper-button-next, .swiper-button-prev {
          display: none !important;
      }  
-   
+     
+     form h1 {
+         font-size: 3.5vh;
+     }
+     .footerInside {
+         padding-bottom: 40px;
+     }
   }
+
+  @media screen and (min-width: 950px) and (max-width: 1200px) {
+  .swiper-button-next, .swiper-button-prev {
+         display: none !important;
+     }  
+}
