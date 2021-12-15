@@ -4,7 +4,6 @@
     padding: 0;
     text-decoration: none;
 }
-
 .html {
     scroll-behavior: smooth;
     display: block;
@@ -12,19 +11,14 @@
 ::selection {
   background-color: #f4dbdbc2;
 }
-
 .body {
     margin: 0px;
     padding: 0px;
 }
-
 .parallax {
-    /* The image used */
-    background-image: linear-gradient(to bottom, rgb(0, 0, 0, 0.8), rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+    background-image: linear-gradient(to bottom, rgb(0, 0, 0, 0.8), rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3), rgba(255, 255, 255, 0.2)),
     url('../asset/parallax.jpg');
     height: 100vh;
-  
-    /* Create the parallax scrolling effect */
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -33,11 +27,10 @@
     flex-direction: column;
     align-items: flex-start;
     -webkit-background-size: cover;
--moz-background-size: cover;
--o-background-size: cover;
-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
   }
-
 .menu {
     font-size: 25px;
     display: flex;
@@ -47,16 +40,15 @@ background-size: cover;
     padding: 60px;
     align-self: stretch;
 }
-  .fa-instagram {  
-    color: white; 
-    transition: all .2s ease-in-out; 
-  }  
-
+  .fa-instagram {
+    color: white;
+    transition: all .2s ease-in-out;
+  }
 #links, #banner p, #hed {
     color: white;
     font-size: 20px;
     font-family: 'Nunito Sans', sans-serif;
-    transition: all .3s ease-in-out; 
+    transition: all .3s ease-in-out;
 }
 #links, #banner {
     -webkit-user-select: none;
@@ -66,7 +58,6 @@ background-size: cover;
     -o-user-select: none;
     user-select: none;
 }
-
 #submenu {
     display: flex;
     align-items: center;
@@ -92,7 +83,6 @@ background-size: cover;
 .bannerimg {
     width: 40vw;
     transition: all .4s ease-in-out;
-    
 }
 #banner p {
     padding: 30px;
@@ -107,7 +97,6 @@ background-size: cover;
   --mainColor2: white;
   --mainColor3: #d9cbc0;
 }
-
 #links::after {
     display: flex;
     content: '';
@@ -119,7 +108,6 @@ background-size: cover;
     opacity: 0;
     transition: opacity 300ms, transform 300ms;
   }
-  
   #links:hover::after,
   #links:focus::after {
     opacity: 1;
@@ -133,7 +121,6 @@ background-size: cover;
       color: 	#f4dbdb;
       transform: scale(1.10);
   }
- 
  #learn {
     width: 250px;
     padding: 10px;
@@ -156,80 +143,71 @@ background-size: cover;
     background-size: 0px 0px;
     text-decoration: none;
     transition: all .4s;
-
 }
-
  #learn:hover {
      color: black;
      border-color: #f4dbdb;
      background-size: 4px 50px;
      border-color: rgba(255, 255, 255, 0);
      transform: scale(1.05);
-} 
+}
 #banner img:hover {
     transform: scale(1.02);
 }
-
 .about {
     width: 100%;
     min-height: 500px;
-    background-color: #d9cbc0;
+    background-color: 	#fbe3d1;
     display: flex;
     justify-content: center;
     flex-direction: row;
     align-items: center;
     flex-wrap: wrap;
 }
-
 :root {
-	--primary: #f4dbdb;
+	--primary: #ffe8e8;
 	--secondary: white;
-	--third: #f4dbdb;
+	--third: #ffe8e8;
     --swiper-theme-color:  white    !important;
 }
-
 .shape {
     background: linear-gradient(45deg, var(--primary) 0%, var(--secondary) 100%);
- animation: morph 8s ease-in-out infinite;
- border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
- height: 300px;
- transition: all 4s ease-in-out;
- width: 300px;
- z-index: 5;
- display: flex;
- justify-content: center;
- overflow: hidden;
- padding-top: 30px;
+    animation: morph 8s ease-in-out infinite;
+    border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+    height: 300px;
+    transition: all 4s ease-in-out;
+    width: 300px;
+    z-index: 5;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    padding-top: 30px;
 }
-
 @keyframes morph {
  0% {
            border-radius:  60% 40% 30% 70% / 60% 30% 70% 40%;
            background: linear-gradient(45deg, var(--primary) 0%, var(--secondary) 100%);
-   } 
-   
+   }
+
    50% {
            border-radius:  30% 60% 70% 40% / 50% 60% 30% 60%;
            background: linear-gradient(45deg, var(--third) 0%, var(--secondary) 100%);
    }
- 
+
    100% {
        border-radius:  60% 40% 30% 70% / 60% 30% 70% 40%;
        background: linear-gradient(45deg, var(--primary) 0%, var(--secondary) 100%);
-   } 
+   }
 }
-
 .shape:hover {
     animation-play-state: paused;
 }
-
 #lera {
     width: 200px;
     display: flex;
     align-self: center;
     justify-content: center;
     position: relative;
-    
 }
 #lera2 {
     width: 200px;
@@ -243,7 +221,6 @@ background-size: cover;
     width: 650px;
     padding-bottom: 70px;
 }
-
 .bio h1 {
     font-family: 'Playfair Display', serif;
     font-weight: 700;
@@ -253,7 +230,7 @@ background-size: cover;
 }
 .bio h2 {
     font-family: 'Nunito', sans-serif;
-    font-weight: 800;
+    font-weight: 700;
     font-size: 20px;
     color: black;
     opacity: 80%;
@@ -266,7 +243,6 @@ background-size: cover;
     opacity: 80%;
     padding-top: 30px;
 }
-
 #instabut {
     display: inline-block;
     margin-top: 35px;
@@ -291,26 +267,22 @@ background-size: cover;
     background-size: 0px 0px;
     text-decoration: none;
     transition: all .4s;
-
 }
-
  #instabut:hover {
      color: black;
      border-color: white;
      background-size: 4px 50px;
      border-color: rgba(255, 255, 255, 0);
      transform: scale(1.0);
-} 
-
+}
 #instabut span {
     color: black;
     padding-right: 10px;
 }
-
 .hey {
     width: 100%;
     min-height: 450px;
-    background: linear-gradient(white, #d9cbc0);
+    background: linear-gradient(white, #d9cbc0, #d9cbc0);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -326,14 +298,12 @@ background-size: cover;
     color: black;
     opacity: 80%;
 }
-
 #ques {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
 }
-
 #ques h2 {
     font-family: 'Playfair Display', serif;
     font-weight: 700;
@@ -341,7 +311,6 @@ background-size: cover;
     color: black;
     padding: 15px;
 }
-
 .hey p {
     font-family: 'Nunito', sans-serif;
     font-weight: 300;
@@ -350,18 +319,17 @@ background-size: cover;
     padding-top: 10px;
 }
 #memo {
-    font-weight: 800;
+    font-weight: 700;
     font-size: 25px;
     color: black;
 }
-
 .hidden {
     animation-duration: 3s;
     animation-name: slidein;
     animation-iteration-count: 1;
     opacity: 0;
-    animation-fill-mode: forwards; 
-    transition: all .4s; 
+    animation-fill-mode: forwards;
+    transition: all .4s;
     animation-play-state: paused;
 }
 .hidden2 {
@@ -369,17 +337,16 @@ background-size: cover;
     animation-name: slidein;
     animation-iteration-count: 1;
     opacity: 0;
-    animation-fill-mode: forwards; 
-    transition: all .4s; 
+    animation-fill-mode: forwards;
+    transition: all .4s;
 }
-
 .hidd {
     animation-duration: 3s;
     animation-name: slideon;
     animation-iteration-count: 1;
     opacity: 0;
-    animation-fill-mode: forwards; 
-    transition: all .4s; 
+    animation-fill-mode: forwards;
+    transition: all .4s;
     animation-play-state: paused;
 }
 .hidd2 {
@@ -387,32 +354,23 @@ background-size: cover;
     animation-name: slideon;
     animation-iteration-count: 1;
     opacity: 0;
-    animation-fill-mode: forwards; 
-    transition: all .4s; 
+    animation-fill-mode: forwards;
+    transition: all .4s;
 }
-
-
 @keyframes slidein {
     0% { opacity: 0;  }
     25%,75%  { opacity: 0.8; }
     100% { opacity: 0.8; }
 }
-
 @keyframes slideon {
     0% { opacity: 0; transform: scale(0.5); }
     25%,75%  { opacity: 0.8; transform: scale(1); }
     100% { opacity: 0.8; transform: scale(1);}
 }
-
 .animate-delay-1 { animation-delay: 0.7s;}
 .animate-delay-2 { animation-delay: 1.4s;}
 .animate-delay-3 { animation-delay: 2.1s;}
 .animate-delay-4 { animation-delay: 2.7s;}
- 
-
-/* https://nicepage.com/ru/c/otzyvy-html-shablony
-https://nicepage.com/ru/html-templates/preview/chto-govoryat-o-nas-polzovateli-372297?device=desktop */
-
 
 .benefits {
     width: 100%;
@@ -420,7 +378,7 @@ https://nicepage.com/ru/html-templates/preview/chto-govoryat-o-nas-polzovateli-3
      background-image: url("../asset/photo1.jpg");
     box-shadow: inset 0 0 0 1000px rgba(0,0,0,.3), inset 0 0 0 1000px rgba(0,0,0,.2);
     /* Set a specific height */
-  
+
     /* Create the parallax scrolling effect */
     background-attachment: fixed;
     background-position: 10%;
@@ -436,7 +394,6 @@ https://nicepage.com/ru/html-templates/preview/chto-govoryat-o-nas-polzovateli-3
     padding-top: 30px;
     padding-bottom: 80px;
 }
-
 .ben {
     display: flex;
     flex-direction: column;
@@ -447,89 +404,83 @@ https://nicepage.com/ru/html-templates/preview/chto-govoryat-o-nas-polzovateli-3
     transform: scale(1.01);
     transition: 500ms;
 }
-
 .shapethree {
- animation: morph4 8s ease-in-out infinite;
- border-radius: 40% 30% 60% 70%;
- height: 200px;
- transition: all 8s ease-in-out;
- width: 200px;
- overflow: hidden;
- box-shadow: 2px 2px 109px 0px rgba(255,255,255,0.75);
--webkit-box-shadow: 2px 2px 109px 0px rgba(255,255,255,0.75);
--moz-box-shadow: 2px 2px 109px 0px rgba(255,255,255,0.75);
+    animation: morph4 8s ease-in-out infinite;
+    border-radius: 40% 30% 60% 70%;
+    height: 200px;
+    transition: all 8s ease-in-out;
+    width: 200px;
+    overflow: hidden;
+    box-shadow: 2px 2px 109px 0px rgba(255,255,255,0.75);
+    -webkit-box-shadow: 2px 2px 109px 0px rgba(255,255,255,0.75);
+    -moz-box-shadow: 2px 2px 109px 0px rgba(255,255,255,0.75);
 }
 .shapefour {
- animation: morph2 8s ease-in-out infinite;
- border-radius:  40% 30% 60% 70%;
- height: 200px;
- transition: all 8s ease-in-out;
- width: 200px;
- overflow: hidden;
- box-shadow: 2px 2px 109px 0px rgba(255,255,255,0.75);
--webkit-box-shadow: 2px 2px 109px 0px rgba(255,255,255,0.75);
--moz-box-shadow: 2px 2px 109px 0px rgba(255,255,255,0.75);
+    animation: morph2 8s ease-in-out infinite;
+    border-radius:  40% 30% 60% 70%;
+    height: 200px;
+    transition: all 8s ease-in-out;
+    width: 200px;
+    overflow: hidden;
+    box-shadow: 2px 2px 109px 0px rgba(255,255,255,0.75);
+    -webkit-box-shadow: 2px 2px 109px 0px rgba(255,255,255,0.75);
+    -moz-box-shadow: 2px 2px 109px 0px rgba(255,255,255,0.75);
 }
 .shapefive {
- animation: morph3 8s ease-in-out infinite;
- border-radius: 40% 30% 60% 70%;
- height: 200px;
- transition: all 8s ease-in-out;
- width: 200px;
- overflow: hidden;
- box-shadow: 2px 2px 109px 0px rgba(255,255,255,0.75);
--webkit-box-shadow: 2px 2px 109px 0px rgba(255,255,255,0.75);
--moz-box-shadow: 2px 2px 109px 0px rgba(255,255,255,0.75);
+    animation: morph3 8s ease-in-out infinite;
+    border-radius: 40% 30% 60% 70%;
+    height: 200px;
+    transition: all 8s ease-in-out;
+    width: 200px;
+    overflow: hidden;
+    box-shadow: 2px 2px 109px 0px rgba(255,255,255,0.75);
+    -webkit-box-shadow: 2px 2px 109px 0px rgba(255,255,255,0.75);
+    -moz-box-shadow: 2px 2px 109px 0px rgba(255,255,255,0.75);
 }
-
 .firstph {
-      background-image: url("../asset/image1.jpg");
-      background-size: 200px;
+    background-image: url("../asset/image1.jpg");
+    background-size: 200px;
 }
 .secondph {
-      background-image: url("../asset/image2.jpg");
-      background-size: 200px;
+    background-image: url("../asset/image2.jpg");
+    background-size: 200px;
 }
 .thirdph {
-      background-image: url("../asset/image3.jpg");
-      background-size: 200px;
+    background-image: url("../asset/image3.jpg");
+    background-size: 200px;
 }
-
-
 @keyframes morph3 {
  0% {
            border-radius:   70% 70% 60% 70% / 50% 60% 40% 60%;
-   } 
-   
+   }
+
    50% {
            border-radius:  50% 60% 40% 60% / 70% 40% 70% 70%;
    }
- 
+
    100% {
     border-radius:   70% 70% 60% 70% / 50% 60% 40% 60%;
-   } 
+   }
 }
 @keyframes morph4 {
  0% {
-           border-radius:   60% 40% 60% 70% / 60% 40% 70% 40%; 
-   } 
-   
+           border-radius:   60% 40% 60% 70% / 60% 40% 70% 40%;
+   }
+
    50% {
            border-radius:   50% 60% 70% 60% / 40% 60% 70% 40% ;
    }
- 
-   100% {
-    border-radius:   60% 40% 60% 70% / 60% 40% 70% 40%; 
-   } 
-}
 
+   100% {
+    border-radius:   60% 40% 60% 70% / 60% 40% 70% 40%;
+   }
+}
 .benefits h1 {
     padding: 60px;
     opacity: 95%;
      font-family: 'Playfair Display', serif;
     font-weight: 600;
 }
-
 .postben {
     display: flex;
     flex-direction: row;
@@ -538,17 +489,14 @@ https://nicepage.com/ru/html-templates/preview/chto-govoryat-o-nas-polzovateli-3
     align-items: center;
     text-align: center;
     color: white;
-    
 }
-
 .benefits h2 {
     font-family: 'Nunito', sans-serif;
-    font-weight: 800;
+    font-weight: 700;
     font-size: 20px;
     padding: 40px;
     opacity: 95%;
 }
-
 .daudz {
     background-image: url("data:image/svg+xml;charset=utf8,%3Csvg id='squiggle-link' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:ev='http://www.w3.org/2001/xml-events' viewBox='0 0 20 4'%3E%3Cstyle type='text/css'%3E.squiggle{animation:shift .6s linear infinite;}@keyframes shift {from {transform:translateX(0);}to {transform:translateX(-20px);}}%3C/style%3E%3Cpath fill='none' stroke='white' opacity='0.9' stroke-width='1.2' class='squiggle' d='M0,3.5 c 5,0,5,-3,10,-3 s 5,3,10,3 c 5,0,5,-3,10,-3 s 5,3,10,3'/%3E%3C/svg%3E");
   background-position: bottom;
@@ -558,17 +506,12 @@ https://nicepage.com/ru/html-templates/preview/chto-govoryat-o-nas-polzovateli-3
   padding-bottom: .3em;
   text-decoration: none;
 }
-
 /* THIS IS REVIEW CONTAINER */
-
 .review {
     width: 100%;
     min-height: 500px;
      background-image: url("../asset/unsplash_stil.jpg");
     box-shadow: inset 0 0 0 1000px rgba(0,0,0,.4), inset 0 0 0 1000px rgba(0,0,0,.2);
-    /* Set a specific height */
-  
-    /* Create the parallax scrolling effect */
     background-attachment: fixed;
     background-position: 10%;
     background-repeat: no-repeat;
@@ -584,7 +527,6 @@ https://nicepage.com/ru/html-templates/preview/chto-govoryat-o-nas-polzovateli-3
     padding-bottom: 60px;
     overflow: hidden;
 }
-
 .review h1 {
     font-family: 'Playfair Display', serif;
     color: rgba(255, 255, 255, 0.9);
@@ -592,12 +534,10 @@ https://nicepage.com/ru/html-templates/preview/chto-govoryat-o-nas-polzovateli-3
     font-size: 4vh;
     padding-bottom: 20px;
 }
-
 .slider {
   width: 100%;
   padding: 20px;
 }
-
 .swiper-container {
     width: 100%;
     display: flex !important;
@@ -614,26 +554,18 @@ https://nicepage.com/ru/html-templates/preview/chto-govoryat-o-nas-polzovateli-3
 .swiper-pagination-bullet-active {
     color: white   !important;
 }
-
-         
             .swiper-slide  {
                 display: flex !important;
                 justify-content: center;
                 align-items: center;
             }
-          
-
  .swiper-pagination, .swiper-button-next, .swiper-button-prev {
      position: unset !important;
-    
  }
  .swiper-button-next, .swiper-button-prev {
      color: white   !important;
-     
-     
  }
-
-.card  {  
+.card  {
     display: flex;
     flex-direction: row-reverse;
     flex-wrap: wrap;
@@ -643,7 +575,6 @@ https://nicepage.com/ru/html-templates/preview/chto-govoryat-o-nas-polzovateli-3
     padding-top: 25px;
     transition: 600ms;
 }
-
 .cardinside {
     display: flex;
     flex-direction: column;
@@ -656,17 +587,13 @@ https://nicepage.com/ru/html-templates/preview/chto-govoryat-o-nas-polzovateli-3
     vertical-align: middle;
     margin-left: 5px;
 }
-
 .swiper-pagination {
     padding-top: 0px;
 }
-
-
 .swiper-slide-prev, .swiper-slide-next {
-    transition: opacity 2s !important;  
+    transition: opacity 2s !important;
     opacity: 0 !important;
 }
-
 .revph {
     width: 300px;
     height: 300px;
@@ -679,16 +606,14 @@ https://nicepage.com/ru/html-templates/preview/chto-govoryat-o-nas-polzovateli-3
     font-weight: 400;
     font-size: 20px;
     color: white;
-    opacity: 80%;   
+    opacity: 80%;
 }
-
 .card h2 {
     padding-top: 30px;
     opacity: 95%;
      font-family: 'Playfair Display', serif;
     font-weight: 700;
 }
-
 .shapetwo {
  animation: morph2 8s ease-in-out infinite;
  border-radius: 40% 30% 60% 70%;
@@ -712,23 +637,20 @@ https://nicepage.com/ru/html-templates/preview/chto-govoryat-o-nas-polzovateli-3
     background-image: url("../asset/IMG_1590.jpg");
     background-size: 300px;
 }
-
 @keyframes morph2 {
  0% {
            border-radius:   40% 60% 70% 40% / 50% 60% 40% 60%;
-   } 
-   
-   50% {
-           border-radius:  60% 40% 40% 70% / 60% 40% 70% 40%;  
    }
- 
+
+   50% {
+           border-radius:  60% 40% 40% 70% / 60% 40% 70% 40%;
+   }
+
    100% {
     border-radius:   40% 60% 70% 40% / 50% 60% 40% 60%;
-   } 
+   }
 }
-
 /* */
-
 .cityname {
     font-family: 'Nunito', sans-serif;
     font-size: 18px;
@@ -740,11 +662,7 @@ https://nicepage.com/ru/html-templates/preview/chto-govoryat-o-nas-polzovateli-3
     background-color: rgba(255, 255, 255, 0.400);
     transition: 300ms;
 }
-
-
-/* */ 
-
-
+/* */
 .fa-at {
     padding-right: 3px;
 }
@@ -755,19 +673,16 @@ https://nicepage.com/ru/html-templates/preview/chto-govoryat-o-nas-polzovateli-3
     text-align: left;
     justify-content: flex-start;
     align-items: center;
-    
+
 }
 .fa-at:hover, .fa-map-marker:hover {
     color: white;
      transform: scale(1.0);
 }
-
 .fa:hover {
      transform: scale(1.0);
 }
-
 /* SLIDER END*/
-
 .foorm {
     width: 100%;
     min-height: 100vh;
@@ -778,7 +693,6 @@ https://nicepage.com/ru/html-templates/preview/chto-govoryat-o-nas-polzovateli-3
     font-family: 'Nunito', sans-serif;
     padding: 25px;
 }
-
 #ques h2 {
     display: flex;
     justify-content: center;
@@ -787,13 +701,10 @@ https://nicepage.com/ru/html-templates/preview/chto-govoryat-o-nas-polzovateli-3
 #ques img {
     margin-left: 10px;
 }
-
-
 /* Form design */
 form span {
-font-size: 20px;
+    font-size: 20px;
 }
-
 form {
     padding-top: 25px;
     width: 614px;
@@ -803,26 +714,22 @@ form img {
     vertical-align: middle;
     margin-left: 4px;
 }
-
 .form-element {
     display: flex;
     flex-direction: column;
     margin-bottom: 20px;
 
 }
-
 .form-element span {
     margin-bottom: 10px;
     color: #f4dbdb;
 }
-
 input {
     height: 50px;
 }
 textarea {
     height: 200px;
 }
-
 input, textarea {
     border: none;
     padding: 10px;
@@ -830,7 +737,6 @@ input, textarea {
     font-size: 20px;
     background-color:  rgba(255, 255, 255, 0.95);;
 }
-
 form button {
     width: 100%;
     padding: 15px;
@@ -854,27 +760,22 @@ form button {
     transition: all .4s;
     cursor: pointer;
 }
-
 form button:hover {
      color: black;
      border-color: #d9cbc0;
      background-size: 4px 60px;
      border-color: rgba(255, 255, 255, 0);
      transform: scale(1.0);
-} 
-
-
+}
 form h1 {
     font-family: 'Playfair Display', serif;
     color: rgba(255, 255, 255, 0.9);
     text-align: center;
     font-size: 4vh;
 }
-
 form ::placeholder {
     opacity: 40%;
 }
-
 form p {
     font-family: 'Nunito', sans-serif;
     font-weight: 300;
@@ -887,8 +788,6 @@ form p {
 form b {
     color: rgba(255, 255, 255, 0.9);
 }
-
-
 #formdone {
     width: 100%;
     padding: 15px;
@@ -945,7 +844,6 @@ form b {
     text-align: center;
     align-items: center;
     justify-content: center;
-
     text-decoration: none;
     color: white;
     padding-bottom: 20px;
@@ -981,14 +879,20 @@ form b {
     margin-left: 5px;
 }
 
-
-
 /* THIS IS FOR MOBILE */
 
 @media screen and (min-width: 0px) and (max-width: 950px) {
-    .menu { display: none; }  
+    #submenu { display: none; }
+    .menu {
+        padding: 0px;
+        justify-content: center;
+    }
+    #hed {
+        padding-top: 40px;
+    }
     #banner {
         padding-left: 0px;
+        padding-bottom: 60px;
         min-height: 100%;
     }
     .parallax {
@@ -1020,7 +924,7 @@ background-attachment: scroll;
         padding-top: 80px;
         padding-bottom: 25px;
     }
-    
+
     .card h2 {
     text-align: center;
     justify-content: center;
@@ -1029,24 +933,82 @@ background-attachment: scroll;
     .cityname {
         margin: 5px;
     }
-        
     #ques {
         flex-direction: column;
     }
      .swiper-button-next, .swiper-button-prev {
          display: none !important;
-     }  
-     
+     }
+
      form h1 {
          font-size: 3.5vh;
      }
      .footerInside {
          padding-bottom: 40px;
      }
+     .hey p  {
+        font-size: 18px;
+    }
+    #memo {
+        font-size: 22px;
+    }
+    .hey h1 {
+        font-size: 30px;
+    }
+    .benefits h1 {
+        font-size: 26px;
+        padding: 20px;
+        padding-bottom: 60px;
+    }
+    .benefits h2 {
+        font-size: 19px;
+    }
+    .shape, .shapetwo {
+        width: 250px;
+        height: 250px;
+        background-size: 250px;
+    }
+    #lera, #lera2 {
+        width: 180px;
+    }
+    .bio p {
+        font-size: 19px;
+    }
+    .card p {
+        font-size: 18px;
+    }
+    .cardinside {
+        flex-direction: column-reverse;
+    }
+    .card h2 {
+        font-size: 17px;
+        padding-top: 0px;
+        padding-bottom: 20px;
+    }
+    form p {
+        font-size: 18px;
+        padding-bottom: 40px;
+    }
+    #starFace {
+        width: 30px;
+    }
+    form h1 {
+        padding-top: 15px;
+        padding-bottom: 20px;
+    }
+    form span, input, textarea {
+        font-size: 19px;
+    }
+    .foorm {
+        padding: 20px;
+    }
+    form button {
+        font-size: 18px;
+    }
   }
-
+/* iPad swiper button hidding */
   @media screen and (min-width: 950px) and (max-width: 1200px) {
   .swiper-button-next, .swiper-button-prev {
          display: none !important;
-     }  
+     }
 }
